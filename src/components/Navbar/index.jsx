@@ -47,7 +47,11 @@ const Navbar = ({ setShowMobileNav, isActive }) => {
             </li>
           ))}
         </ul>
-        <Button text='Register' className='items-center flex justify-center' />
+        <Button
+          text='Register'
+          className='items-center flex justify-center'
+          link={'/register'}
+        />
       </div>
       <div className='xl:hidden' onClick={() => setShowMobileNav(true)}>
         <Image

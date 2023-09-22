@@ -17,7 +17,7 @@ const ContactForm = () => {
     onSubmit: async (values, { resetForm, setSubmitting }) => {
       try {
         // Make an Axios POST request here to send the form data
-        const response = await instance.post('/hackn/contact-form', values); // Replace with your API endpoint
+        const response = await instance.post('/hackathon/contact-form', values); // Replace with your API endpoint
         console.log('Form submitted successfully', response.data);
         toast.success('Thank you for reaching out');
 

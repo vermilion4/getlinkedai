@@ -131,7 +131,7 @@ const Hero = () => {
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
-          <Button text='Register' margin />
+          <Button text='Register' margin link='/register' />
 
           <div
             className={`flex justify-center lg:justify-start text-5xl xl:text-[64px] gap-7 relative ${unica.className} pb-[95px]`}>

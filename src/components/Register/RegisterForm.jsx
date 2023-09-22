@@ -40,7 +40,7 @@ const RegisterForm = ({ setShowSuccess }) => {
         {/* Team Name and Phone Number */}
         <div className='flex flex-col md:flex-row gap-8 md:items-center'>
           <div className='space-y-[11px] md:basis-[50%]'>
-            <label htmlFor='name'>Team's Name</label>
+            <label htmlFor='name'>Team&apos;s Name</label>
             <input
               type='text'
               name='team_name'

@@ -6,11 +6,11 @@ import Image from "next/image";
 const Contact = () =>
 {
   return (
-    <section className="min-h-screen grid place-content-center mt-[120px] pt-[88px] pb-[115px] overflow-hidden">
-      <div className=' bg-secondary bg-blend-soft-light bg-[url("/purple-flare-left.png")] w-[951px] h-[994px] absolute -left-60 top-[75px] -z-10 bg-no-repeat'>
+    <section className="min-h-screen grid place-content-center mt-[120px] pt-[88px] pb-[115px] ">
+      <div className=' bg-secondary bg-blend-soft-light bg-[url("/purple-flare-left.png")] w-[951px] h-[994px] absolute -left-60 top-[75px] -z-10 bg-no-repeat hidden md:block'>
         { ' ' }
       </div>
-      <div className=' bg-secondary bg-blend-hard-light bg-[url("/Purple-Lens-Flare.png")] w-[951px] h-[994px] absolute -right-[420px] top-[120px] -z-10 bg-no-repeat rotate-0 hidden md:block'>
+      <div className=' bg-secondary bg-blend-hard-light bg-[url("/Purple-Lens-Flare.png")] w-[951px] h-[994px] absolute right-[0px] top-[120px] -z-10 bg-no-repeat rotate-0 hidden md:block'>
         { ' ' }
       </div>
       <div className="block md:hidden">

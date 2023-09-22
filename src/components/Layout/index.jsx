@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
     <main
-      className={`flex min-h-screen flex-col items-center overflow-hidden ${montserrat.className}`}>
+      className={`flex min-h-screen  flex-col items-center overflow-hidden ${montserrat.className}`}>
       <Navbar setShowMobileNav={setShowMobileNav} isActive={isActive} />
       {showMobileNav ? (
         <MobileNav isActive={isActive} setShowMobileNav={setShowMobileNav} />

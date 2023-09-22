@@ -1,6 +1,44 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+const footerNavlist = [
+  {
+    id: 1,
+    name: 'Overview',
+    link: '/#overview',
+  },
+  {
+    id: 2,
+    name: 'Timeline',
+    link: '/#timeline',
+  },
+
+  {
+    id: 3,
+    name: 'FAQs',
+    link: '/#faq',
+  },
+  {
+    id: 4,
+    name: 'Register',
+    link: '/register',
+  },
+];
+
+function isActive(router, link) {
+  if (link.includes('#')) {
+    // Split hashed links
+    const [linkPath, linkHash] = link.split('#');
+    return router.pathname === linkPath && router.asPath.includes(linkHash);
+  } else {
+    // Direct match for non-hashed links
+    return router.pathname === link;
+  }
+}
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer className='bg-[#100b20] pt-[83px] pb-[49px] px-[87px] md:px-[120px] xl:px-[224px] w-full max-w-[1600px] relative'>
       <div className='animate-pulse absolute lg:top-[30%] lg:left-20 w-[10px] h-3 sm:w-4 sm:h-5 lg:w-[21px] lg:h-[25px] left-10 top-[20%]  z-0'>
@@ -40,10 +78,10 @@ const Footer = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         <div className='flex flex-col justify-between'>
           <div>
-            <h3 className='text-3xl font-bold font-primary mb-2'>
+            <Link href={'/'} className='text-3xl font-bold font-primary '>
               get<span className='text-primary'>linked</span>
-            </h3>
-            <p className='text-xs leading-[20.6px]'>
+            </Link>
+            <p className='text-xs mt-3 leading-[20.6px]'>
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing
               young and talented individuals in the field of technology
@@ -60,13 +98,15 @@ const Footer = () => {
             Useful Links
           </h3>
           <ul className='space-y-3 mb-[18px]'>
-            {['Overview', 'Timeline', 'FAQs', 'Register'].map(
-              (navLink, index) => (
-                <li key={index} className='text-xs leading-[20.6px]'>
-                  {navLink}
-                </li>
-              )
-            )}
+            {footerNavlist.map(({ id, name, link }) => (
+              <li
+                key={id}
+                className={`${
+                  isActive(router, link) ? 'gradient-text ' : ''
+                } hover:gradient-text transition duration-300 ease-in-out text-xs`}>
+                <Link href={link}>{name}</Link>
+              </li>
+            ))}
           </ul>
           <div className='flex items-center gap-4'>
             <span className='text-xs text-primary'>Follow Us</span>

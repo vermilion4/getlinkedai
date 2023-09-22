@@ -4,7 +4,9 @@ import Image from 'next/image';
 
 const Timeline = () => {
   return (
-    <section className='max-w-[1600px] w-full mx-auto pt-[72px] pb-[109px] relative'>
+    <section
+      id='timeline'
+      className='max-w-[1600px] w-full mx-auto pt-[72px] pb-[109px] relative'>
       {/* Start of star icons */}
       <Image
         src='/purple-star.svg'

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Button from '../Button';
 import { useRouter } from 'next/router';
+import ContactForm from './ContactForm';
 
 const MobileContact = () => {
   const router = useRouter();
@@ -18,53 +19,8 @@ const MobileContact = () => {
       <p className='mb-[30px] text-xs'>
         Email us below to any question related to our event
       </p>
-      <form action='' className='mb-[41px]'>
-        <div className='flex flex-col gap-[42px] mb-[31px]'>
-          <div className=''>
-            <input
-              type='text'
-              name='name'
-              id='name'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-[29px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] py-[13px] placeholder:text-white w-full'
-              placeholder='First Name'
-              required
-            />
-          </div>
-          <div className=''>
-            <input
-              type='email'
-              name='email'
-              id='email'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-[29px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] py-[13px] placeholder:text-white w-full'
-              placeholder='Mail'
-              required
-            />
-          </div>
-          <div className=''>
-            <input
-              type='text'
-              name='phone'
-              id='phone'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-[29px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] py-[13px] placeholder:text-white w-full'
-              placeholder='Phone Number'
-              required
-            />
-          </div>
-          <div className=''>
-            <textarea
-              name='message'
-              id='message'
-              cols='10'
-              rows='5'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-[29px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] py-[13px] placeholder:text-white w-full'
-              placeholder='Message'></textarea>
-          </div>
-        </div>
-        <div className='mx-auto w-max'>
-          <Button text='Submit' />
-        </div>
-      </form>
-      <div className='mx-auto text-center w-max'>
+      <ContactForm />
+      <div className='mx-auto mt-[41px] text-center w-max'>
         <p className='text-primary mb-[14px]'>Share on</p>
         <div className='flex items-center gap-4'>
           <Image

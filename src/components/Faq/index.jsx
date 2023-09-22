@@ -3,7 +3,9 @@ import Accordion from './Accordion';
 
 const Faq = () => {
   return (
-    <section className='w-full max-w-[1600px] border-b border-white border-opacity-[18%] py-[60px] lg:pt-48 lg:pb-20 relative'>
+    <section
+      id='faq'
+      className='w-full max-w-[1600px] border-b border-white border-opacity-[18%] py-[60px] lg:pt-48 lg:pb-20 relative'>
       <div className='w-[10px] h-3 sm:w-4 sm:h-5 lg:w-[26px] lg:h-8 ml-auto lg:mb-16 absolute bottom-10 right-40'>
         <Image
           src='/star.png'

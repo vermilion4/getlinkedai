@@ -1,10 +1,15 @@
 import Button from "@/components/Button";
+import ContactForm from "@/components/Contact/ContactForm";
 import MobileContact from "@/components/Contact/MobileContact";
 import Image from "next/image";
+
 const Contact = () =>
 {
   return (
-    <section className="min-h-screen grid place-content-center mt-[120px] pt-[88px] pb-[115px] ">
+    <section className="min-h-screen grid place-content-center mt-[120px] pt-[88px] pb-[115px] overflow-hidden">
+      <div className=' bg-secondary bg-blend-soft-light bg-[url("/purple-flare-left.png")] w-[951px] h-[994px] absolute -left-60 top-[75px] -z-10 bg-no-repeat'>
+        { ' ' }
+      </div>
       <div className=' bg-secondary bg-blend-hard-light bg-[url("/Purple-Lens-Flare.png")] w-[951px] h-[994px] absolute -right-[420px] top-[120px] -z-10 bg-no-repeat rotate-0 hidden md:block'>
         { ' ' }
       </div>
@@ -51,7 +56,7 @@ const Contact = () =>
             <h2 className="font-primary text-xl font-semibold text-primary">Questions or need assistance?</h2>
             <h2 className="font-primary text-xl font-semibold text-primary mb-[47px]">Let us know about it!</h2>
 
-            <form action="">
+            {/* <form action="">
               <div className="flex flex-col gap-[42px] mb-[31px]">
                 <div className="">
                   <input
@@ -93,7 +98,8 @@ const Contact = () =>
               <div className="mx-auto w-max">
                 <Button text="Submit" />
               </div>
-            </form>
+            </form> */}
+            <ContactForm />
           </div>
         </div>
       </div>

@@ -2,7 +2,9 @@ import Image from 'next/image';
 
 const Introduction = () => {
   return (
-    <section className='w-full max-w-[1600px] pt-[62px] pb-[78px] border-b border-white border-opacity-[18%]'>
+    <section
+      id='overview'
+      className='w-full max-w-[1600px] pt-[62px] pb-[78px] border-b border-white border-opacity-[18%]'>
       <div className='flex flex-col w-[80%] mx-auto lg:flex-row justify-between xl:w-full xl:mx-0 xl:pl-64 xl:pr-40 items-center relative'>
         <div className='basis-[50%] relative'>
           <div className='relative'>

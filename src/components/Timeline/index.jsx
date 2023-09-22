@@ -1,5 +1,5 @@
 import { timeline } from '@/data/timeline';
-import MobileTimeline from './mobileTimeline';
+import MobileTimeline from './MobileTimeline';
 import Image from 'next/image';
 
 const Timeline = () => {

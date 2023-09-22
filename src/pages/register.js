@@ -43,7 +43,7 @@ const Register = () =>
       <div className="block md:hidden">
         <MobileRegister />
       </div>
-      <div className="md:flex flex-col lg:flex-row gap-20 xl:gap-56 items-center hidden">
+      <div className="md:flex flex-col lg:flex-row gap-10 2xl:gap-56 items-center hidden">
         <div className="">
           <Image src="/register.png" alt="registration icon" width={ 717 } height={ 717 } className="w-96 h-96 animate-bounce-slow" />
         </div>

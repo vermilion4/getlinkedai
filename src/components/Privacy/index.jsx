@@ -3,7 +3,9 @@ import Button from '../Button';
 
 const Privacy = () => {
   return (
-    <section className='w-full max-w-[1600px] py-[60px] lg:py-40 relative'>
+    <section
+      id='privacy'
+      className='w-full max-w-[1600px] py-[60px] lg:py-40 relative'>
       <Image
         src='/purple-star.svg'
         alt='star icon'

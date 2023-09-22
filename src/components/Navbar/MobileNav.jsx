@@ -32,7 +32,7 @@ const MobileNav = ({ setShowMobileNav, isActive }) => {
               key={id}
               className={`${
                 isActive(router, link) ? 'gradient-text ' : ''
-              } hover:gradient-text transition duration-300 ease-in-out`}>
+              } hover:text-primary transition duration-300 ease-in-out`}>
               <Link href={link}>{name}</Link>
             </li>
           ))}

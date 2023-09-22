@@ -88,9 +88,17 @@ const Footer = () => {
             </p>
           </div>
           <div className='text-xs leading-[20.6px] mt-[39px] md:mt-0'>
-            Terms of Use{' '}
-            <span className='px-[9px] text-lg text-primary'>|</span> Privacy
-            Policy
+            <Link
+              href='/#privacy'
+              className='hover:text-primary ease-in duration-300'>
+              Terms of Use
+            </Link>
+            <span className='px-[9px] text-lg text-primary'>|</span>{' '}
+            <Link
+              href='/#privacy'
+              className='hover:text-primary ease-in duration-300'>
+              Privacy Policy
+            </Link>
           </div>
         </div>
         <div className='md:mx-auto mt-10 md:mt-0'>
@@ -103,7 +111,7 @@ const Footer = () => {
                 key={id}
                 className={`${
                   isActive(router, link) ? 'gradient-text ' : ''
-                } hover:gradient-text transition duration-300 ease-in-out text-xs`}>
+                } hover:text-primary transition duration-300 ease-in-out text-xs`}>
                 <Link href={link}>{name}</Link>
               </li>
             ))}
@@ -137,7 +145,12 @@ const Footer = () => {
           </h3>
           <div className='flex items-start gap-4 mb-[22px]'>
             <Image src='/tel.svg' width={12} height={12} alt='Tel Icon' />
-            <span className='text-xs '>+234 6707653444</span>
+            <a
+              className='text-xs hover:text-primary ease-in duration-300'
+              target='_blank'
+              href='tel:+234 6707653444'>
+              +234 6707653444
+            </a>
           </div>
           <div className='flex items-start gap-4'>
             <Image
@@ -146,9 +159,12 @@ const Footer = () => {
               height={15}
               alt='Address Icon'
             />
-            <span className='text-xs '>
+            <a
+              href='https://maps.app.goo.gl/kun3wqZBHqD5uqHz5'
+              className='text-xs hover:text-primary ease-in duration-300'
+              target='_blank'>
               27,Alara Street Yaba 100012 Lagos State
-            </span>
+            </a>
           </div>
         </div>
       </div>

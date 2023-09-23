@@ -174,7 +174,7 @@ const RegisterForm = ({ setShowSuccess }) => {
 
         <div className='mx-auto w-full'>
           <Button
-            text='Register Now'
+            text={formik.isSubmitting ? 'Loading...' : 'Register Now'}
             type='submit'
             disabled={formik.isSubmitting}
             full

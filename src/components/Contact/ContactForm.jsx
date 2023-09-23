@@ -106,7 +106,11 @@ const ContactForm = () => {
         </div>
 
         <div className='mx-auto w-max'>
-          <Button text='Submit' type='submit' disabled={formik.isSubmitting} />
+          <Button
+            text={formik.isSubmitting ? 'Loading...' : 'Submit'}
+            type='submit'
+            disabled={formik.isSubmitting}
+          />
         </div>
       </div>
     </form>

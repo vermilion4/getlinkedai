@@ -24,7 +24,7 @@ const Navbar = ({ setShowMobileNav, isActive }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  console.log(router.pathname);
+
   return (
     <nav
       className={`flex justify-between items-center w-full px-12 lg:px-32 pt-[34px] lg:pt-[63px] pb-[25px] max-w-[1600px] z-[999] fixed bg-secondary top-0 shadow-sm ${

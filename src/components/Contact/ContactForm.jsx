@@ -16,12 +16,9 @@ const ContactForm = () => {
     validationSchema,
     onSubmit: async (values, { resetForm, setSubmitting }) => {
       try {
-        // Make an Axios POST request here to send the form data
-        const response = await instance.post('/hackathon/contact-form', values); // Replace with your API endpoint
-        console.log('Form submitted successfully', response.data);
+        const response = await instance.post('/hackathon/contact-form', values);
         toast.success('Thank you for reaching out');
 
-        // Optionally, you can reset the form
         resetForm();
       } catch (error) {
         console.error('Error submitting the form', error);

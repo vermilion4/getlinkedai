@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 const MobileNav = ({ setShowMobileNav, isActive }) => {
   const router = useRouter();
   return (
-    <nav className='bg-secondary w-screen sm:w-[348px] right-0 h-[492px] px-[49px] sm:right-[49px] pt-[120px] border-[0.5px] border-white border-opacity-[4%] rounded-lg backdrop-filter backdrop-blur-[30px] mt-[111px] lg:mt-[140px] fixed transition-all ease-in duration-300 z-[999]'>
+    <nav className='bg-secondary w-screen sm:w-[348px] right-0 h-[492px] px-[49px] sm:right-[49px] pt-[120px] border-[0.5px] border-white border-opacity-[4%] rounded-lg backdrop-filter backdrop-blur-[30px] mt-[111px] lg:mt-[140px] fixed  transition-all ease-in duration-300 z-[999]'>
       <div onClick={() => setShowMobileNav(false)} className='cursor-pointer'>
         <Image
           src='/circle.svg'
@@ -25,7 +25,7 @@ const MobileNav = ({ setShowMobileNav, isActive }) => {
         />
       </div>
       <div>
-        <ul className='flex flex-col gap-10 mb-10'>
+        <ul className='flex flex-col gap-8 mb-10'>
           {Navlist.map(({ id, name, link }) => (
             <li
               onClick={() => setShowMobileNav(false)}

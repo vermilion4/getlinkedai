@@ -25,7 +25,7 @@ const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const targetDate = new Date('September 26, 2023 00:00:00');
+    const targetDate = new Date('November 18, 2023 00:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();

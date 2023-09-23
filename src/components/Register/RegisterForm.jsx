@@ -116,7 +116,7 @@ const RegisterForm = ({ setShowSuccess }) => {
             <select
               name='category'
               id='category'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-4 py-[13px] placeholder-white w-full text-sm'
+              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-4 py-[13px] placeholder-white w-full text-sm bg-secondary'
               {...formik.getFieldProps('category')}>
               <option value=''>Select your category</option>
               <option value='1'>DevOPS</option>
@@ -135,7 +135,7 @@ const RegisterForm = ({ setShowSuccess }) => {
             <select
               name='group_size'
               id='group_size'
-              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-4 py-[13px] placeholder-white w-full text-sm'
+              className='bg-[rgba(255,255,255,0.03)] border border-white rounded px-4 py-[13px] placeholder-white w-full text-sm bg-secondary'
               {...formik.getFieldProps('group_size')}>
               <option value=''>Select</option>
               <option value='1'>1</option>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import RegisterForm from './RegisterForm';
 
-const MobileRegister = () => {
+const MobileRegister = ({ setShowSuccess }) => {
   const router = useRouter();
   return (
     <section className='bg-secondary px-[49px] py-[47px] w-screen min-h-screen absolute top-0 left-0 z-[1000]'>
@@ -45,7 +45,7 @@ const MobileRegister = () => {
       <p className='mb-[30px] text-xs'>
         Email us below to any question related to our event
       </p>
-      <RegisterForm />
+      <RegisterForm setShowSuccess={setShowSuccess} />
     </section>
   );
 };

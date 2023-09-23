@@ -41,7 +41,7 @@ const Register = () =>
         className='animate-pulse absolute lg:-bottom-40 lg:left-[500px] w-[10px] h-3 sm:w-4 sm:h-5 sm:bottom-10 lg:w-[21px] lg:h-[25px] -bottom-10 -left-10 z-10'
       />
       <div className="block md:hidden">
-        <MobileRegister />
+        <MobileRegister setShowSuccess={ setShowSuccess } />
       </div>
       <div className="md:flex flex-col lg:flex-row gap-10 2xl:gap-56 items-center hidden">
         <div className="">

@@ -25,7 +25,7 @@ const Button = ({ text, margin, mobile, link, full }) => {
           {text}
         </a>
       ) : (
-        text
+        <div className='px-[52px]'>{text}</div>
       )}
     </button>
   );

@@ -69,7 +69,7 @@ const Hero = () => {
               />
             </div>
             <div className='relative w-max mx-auto md:mx-0 z-20'>
-              <h2 className='text-sm [@media(min-width:500px)]:text-base sm:text-xl lg:text-3xl font-bold italic'>
+              <h2 className='text-sm [@media(min-width:500px)and(max-width:639px)]:text-base sm:text-xl lg:text-3xl font-bold italic'>
                 <TypeAnimation
                   sequence={[
                     'Igniting a Revolution in HR Innovation',

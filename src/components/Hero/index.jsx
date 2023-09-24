@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import { Unica_One } from 'next/font/google';
 import Button from '../Button';
 import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+
+const unica = Unica_One({ subsets: ['latin'], weight: ['400'] });
 
 const cardVariants = {
   offscreen: {
